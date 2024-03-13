@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content {
+    width: 600px;
+    height: 100%;
+    position: relative;
+}
+
+#foreground-filter {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+#background-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(7px) grayscale(60%) brightness(70%);
+    position: absolute;
+    z-index: 0;
+}
+
+#border::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 25px solid #33566D;
+    z-index: 2;
+}
+
+#border-title {
+    position: absolute;
+    width: 98%;
+    height: 90px;
+    background-color: #33566D;
+    transform: rotate(-4deg);
+    z-index: 2;
+}
+
+#border-title-text {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+}
+
+#border-title-text h1 {
+    padding-left: 25px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#border-title-text h2 {
+    padding-right: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#content-overlay {
+    width: 100%;
+    height: calc(100% - 170px);
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: 130px;
+}
+
+#overlay-text {
+    align-self: flex-start;
+}
+
+#overlay-text p {
+    font-size: small;
+    font-weight: 100;
+}
+
+button#order {
+    padding: 10px 50px;
+    background-color: #F49619;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 50px;
+    font-weight: 800;
+    font-size: large;
+    letter-spacing: 1px;
+    color: white;
+}
+
+button#order:hover {
+    opacity: 90%;
+    cursor: pointer;
+}
+
+#overlay-title {
+    line-height: 10px;
+}
+
+#overlay-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
+}
+
+#overlay-text-bottom {
+    text-align: center;
+}
+
+#overlay-picture-text {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#foreground-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay-text {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px
+}
+
+#website,
+#phone {
+    color: white;
+    font-size: small;
+}
+
+#number:hover {
+    text-decoration: underline;
+}
+
+.text-orange {
+    color: #F49619;
+}
