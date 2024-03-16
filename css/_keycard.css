@@ -3,7 +3,7 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 #content {
@@ -53,7 +53,7 @@ body {
 
 #border-title-text {
     position: relative;
-    top: -10px;
+    top: -5px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -63,13 +63,13 @@ body {
 #border-title-text h1 {
     padding-left: 25px;
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 #border-title-text h2 {
     padding-right: 25px;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #content-overlay {
@@ -103,7 +103,6 @@ button#order {
     height: 50px;
     font-weight: 800;
     font-size: large;
-    letter-spacing: 1px;
     color: white;
 }
 
@@ -116,6 +115,14 @@ button#order:hover {
     line-height: 10px;
 }
 
+#overlay-title h1 {
+    font-weight: 500;
+}
+
+#overlay-title h2 {
+    font-weight: 300;
+}
+
 #overlay-contact {
     display: flex;
     justify-content: space-between;
@@ -125,6 +132,7 @@ button#order:hover {
 
 #overlay-text-bottom {
     text-align: center;
+    font-weight: 500;
 }
 
 #overlay-picture-text {
@@ -146,7 +154,7 @@ button#order:hover {
     justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 #website,
