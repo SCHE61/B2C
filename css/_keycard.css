@@ -143,8 +143,9 @@ button#order:hover {
 
 #foreground-image {
     height: 100%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
+    overflow: hidden;
 }
 
 #overlay-text {
